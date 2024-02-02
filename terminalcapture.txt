@@ -1,0 +1,66 @@
+Last login: Thu Jan 31 05:49:00 on ttys000
+MacBook:~ tester$ cd Projects/Controller/
+MacBook:Controller tester$ ls -al
+total 1136
+drwxr-xr-x  11 tester  staff     374 Jan 31 05:45 .
+drwx------   8 tester  staff     272 Jan 30 19:12 ..
+-rw-r--r--@  1 tester  staff    2866 Jan 30 18:56 calibration.tsv
+-rwxr-xr-x   1 tester  staff   26608 Jan 30 22:10 controller
+-rwx--x--x@  1 tester  staff    3335 Jan 31 05:36 controller.cpp
+-rwx--x--x@  1 tester  staff    1054 Jan 31 05:02 controller.h
+-rw-r--r--   1 tester  staff  304404 Jan 31 05:39 controller.o
+-rwx--x--x@  1 tester  staff     282 Jan 31 04:39 makefile
+-rwxr-xr-x   1 tester  staff   97964 Jan 31 05:39 monitor
+-rwx--x--x@  1 tester  staff    1237 Jan 31 05:12 monitorctrl.cpp
+-rw-r--r--   1 tester  staff  125692 Jan 31 05:39 monitorctrl.o
+MacBook:Controller tester$ ./monitor
+*** Cryo-cooler controller ***
+Please provide the calibration file name: calibration.tsv
+Controller loading sensor calibration from file 'calibration.tsv'
+Press 'q' to quit, 'v' to convert voltage and 't' to convert temperature.
+Command: v
+Voltage (mV): 85.023
+Temperature (K): 502.67
+Command: v
+Voltage (mV): 628.302
+Temperature (K): 270.00
+Command: v
+Voltage (mV): 892.35
+Temperature (K): 148.49
+Command: v
+Voltage (mV): 1725.0
+Temperature (K): inf
+Command: v
+Voltage (mV): 1600.2
+Temperature (K): 3.46
+Command: v
+Voltage (mV): 1050.13
+Temperature (K): 64.10
+Command: t
+Temperature (K): 1.23
+Voltage (mV): 1646.415
+Command: t
+Temperature (K): 1.34
+Voltage (mV): 1645.040
+Command: t
+Temperature (K): 1.40
+Voltage (mV): 1644.290
+Command: t
+Temperature (K): 2.1
+Voltage (mV): 1632.740
+Command: t
+Temperature (K): 3.5
+Voltage (mV): 1599.020
+Command: t
+Temperature (K): 40.125
+Voltage (mV): 1088.823
+Command: t
+Temperature (K): 401.25
+Voltage (mV): 322.898
+Command: t
+Temperature (K): 505.13
+Voltage (mV): 0.000
+Command: q
+*** Good-bye! ***
+MacBook:Controller tester$ 
+
